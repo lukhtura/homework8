@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-inner">
+            <div class="card-image">
+                <span class="card-image-number js--card-image-number"></span>
+                <span class="card-image-holder js--card-image-holder"></span>
+                <span class="card-image-expires">11/22</span>
+
+            </div>
+            <div class="card"></div>
+            <form action="#" class="form">
+                <div class="card-number-and-name">
+                    <label><span class="label-text">Card number</span>
+                        <input type="number" class="input-data js--card-number-input">
+                    </label>
+                    <label><span class="label-text">Card name</span>
+                        <input type="text" class="input-data js--card-name-input"></label>
+                </div>
+                <div class="card-date-and-code">
+                    <div>
+                        <span class="label-text">Expiration number</span>
+                        <select>
+                            <option disabled selected>Month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</0option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select>
+                            <option disabled selected>Year</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                            <option value="25">2025</option>
+                            <option value="26">26</option>
+                            <option value="27">2027</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label><span class="label-text" id="exp-num">CVV</span>
+                            <input type="number" class="input-data">
+                        </label>
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js.js"></script>
+</body>
+
+</html>
