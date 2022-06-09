@@ -1,5 +1,3 @@
-// let user;
-
 //card number
 const cardNumberInput = document.querySelector('.js--card-number-input');
 const cardImageNumber = document.querySelector('.js--card-image-number');
@@ -66,7 +64,7 @@ codeInput.addEventListener('input', function () {
 //submit button
 const submitButton = document.querySelector('.submit-button');
 submitButton.addEventListener('click', () => {
-    user = new User;
+    let user = new User;
     console.log(user);
 });
 
