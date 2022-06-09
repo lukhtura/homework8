@@ -22,7 +22,9 @@
     left: 93px;
     top: 50px;
 
-    .card-image-number, .card-image-holder, .card-image-expires {
+    .card-image-number,
+    .card-image-holder,
+    .card-image-expires {
         position: absolute;
     }
 
@@ -32,18 +34,18 @@
     }
 
     .card-image-holder {
-        bottom: 10px;
-        left: 10px;
+        bottom: 20px;
+        left: 15px;
     }
 
     .card-image-expires {
-        bottom: 10px;
-        right: 10px;
+        bottom: 20px;
+        right: 15px;
     }
 }
 
 .form {
-    padding: 300px 20px 20px;
+    padding: 270px 20px 20px;
     display: inline-block;
     border: 1px solid black;
     width: 500px;
@@ -54,23 +56,56 @@
         flex-direction: column;
         gap: 30px;
         margin-bottom: 30px;
+
+        .input-data {
+            border: 2px solid;
+            border-radius: 10px;
+            width: 335px;
+            height: 40px;
+            font-size: 35px;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
     }
 
     .card-date-and-code {
         display: flex;
         select {
-            width: 65px;
+            width: 125px;
+            border: 2px solid;
+            border-radius: 10px;
+            height: 40px;
+            font-size: 35px;
+            text-align: center;
         }
         .input-data {
-            width: 50px;
+            text-align: center;
+            width: 75px;
+            border: 2px solid;
+            border-radius: 10px;
+            height: 40px;
+            font-size: 35px;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
         }
-        
     }
 
-    .submit-button {
+    .submit-container {
         margin: 20px 0;
+
+        .submit-button {
+            height: 40px;
+            width: 125px;
+        }
     }
-    
+
     .label-text {
         margin-right: 200px;
         font-size: 20px;
@@ -80,4 +115,3 @@
 #exp-num {
     margin-right: 0;
 }
-

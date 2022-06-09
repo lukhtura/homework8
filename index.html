@@ -14,9 +14,18 @@
     <div class="container">
         <div class="container-inner">
             <div class="card-image">
-                <span class="card-image-number js--card-image-number"></span>
-                <span class="card-image-holder js--card-image-holder"></span>
-                <span class="card-image-expires">11/22</span>
+                <span style="    position: absolute;
+                top: 120px;
+                left: 120px;">card number</span>
+                <span class="card-image-number js--card-image-number">#### #### #### ####</span>
+                <span style="    position: absolute;
+                bottom: 3px;
+                left: 16px;">card holder</span>
+                <span class="card-image-holder js--card-image-holder">Your Name</span>
+                <span style="    position: absolute;
+                bottom: 3px;
+                right: 14px;">expires date</span>
+                <span class="card-image-expires"><span class="js--month">XX</span>/<span class="js--year">XX</span></span>
 
             </div>
             <div class="card"></div>
@@ -26,13 +35,13 @@
                         <input type="number" class="input-data js--card-number-input">
                     </label>
                     <label><span class="label-text">Card name</span>
-                        <input type="text" class="input-data js--card-name-input"></label>
+                        <input type="text" minlength="3" max="10" class="input-data js--card-name-input"></label>
                 </div>
                 <div class="card-date-and-code">
                     <div>
-                        <span class="label-text">Expiration number</span>
-                        <select>
-                            <option disabled selected>Month</option>
+                        <span class="label-text">Expiration date</span>
+                        <select class="js--month-selector">
+                            <option disabled selected value="null">Month</option>
                             <option value="01">01</option>
                             <option value="02">02</option>
                             <option value="03">03</option>
@@ -46,24 +55,24 @@
                             <option value="11">11</option>
                             <option value="12">12</option>
                         </select>
-                        <select>
-                            <option disabled selected>Year</option>
+                        <select class="js--year-selector">
+                            <option disabled selected value="null">Year</option>
                             <option value="22">2022</option>
                             <option value="23">2023</option>
                             <option value="24">2024</option>
                             <option value="25">2025</option>
-                            <option value="26">26</option>
+                            <option value="26">2026</option>
                             <option value="27">2027</option>
                         </select>
                     </div>
                     <div>
                         <label><span class="label-text" id="exp-num">CVV</span>
-                            <input type="number" class="input-data">
+                            <input type="text" class="input-data js--code-input">
                         </label>
                     </div>
                 </div>
-                <div class="submit-button">
-                    <input type="submit">
+                <div class="submit-container">
+                    <input type="submit" class="submit-button" disabled>
                 </div>
             </form>
         </div>
