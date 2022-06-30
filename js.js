@@ -13,7 +13,6 @@ cardNumberInput.addEventListener('input', function () {
     if (this.value.length >= 16) {
         this.value = this.value.slice(0, 16);
         cardImageNumber.innerHTML = `${this.value.substring(0, 4)} ${this.value.substring(4, 8)} ${this.value.substring(8, 12)} ${this.value.substring(12, 16)}`;
-        checkField();
     }
     checkField();
 });
@@ -26,7 +25,6 @@ cardNameInput.addEventListener('input', function () {
     if (this.value.length >= 3) {
         this.value = this.value.slice(0, 10)
         cardImageHolder.innerHTML = this.value;
-        checkField();
     }
     checkField();
 });
