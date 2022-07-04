@@ -37,7 +37,8 @@ function validateForm (formField) {
         };
         checkFields();
     });
-    formField.submit.addEventListener('click', () => {
+    formField.submit.addEventListener('click', (event) => {
+        event.preventDefault();
         let user = new User;
         console.log(user);
     });
